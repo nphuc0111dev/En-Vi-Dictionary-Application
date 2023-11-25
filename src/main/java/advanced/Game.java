@@ -24,8 +24,9 @@ public class Game {
                 String word = rs.getString("Word");
                 String definition = rs.getString("Define");
 
-                System.out.println(definition);
+                System.out.println("Question: " + definition);
                 System.out.println("You have " + MAX_ATTEMPTS + " attempts!");
+
 
                 for(int i=0; i < MAX_ATTEMPTS; i++) {
                     System.out.print("Enter guess: ");
@@ -34,9 +35,11 @@ public class Game {
                     if(guess.equalsIgnoreCase(word)) {
                         System.out.println("Correct!");
                     } else {
-                        System.out.println("Wrong!");
+                        System.out.println("Incorrect! Try to guess again!");
                     }
                 }
+
+                System.out.println("The word was: " + word);
 
             } else {
                 System.out.println("No words found");
@@ -54,6 +57,7 @@ public class Game {
         Game game = new Game();
         game.play();
     }
-    */
+
+     */
 
 }
