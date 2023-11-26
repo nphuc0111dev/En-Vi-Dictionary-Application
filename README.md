@@ -11,8 +11,18 @@ Bài tập lớn Phát triển ứng dụng học Tiếng Anh bằng Java
 
 ## Features
 
+Add new, edit, delete words
+Using FreeTTS library
+Translate English to Vietnamese using Google API
+
 ## Technologies
 
+MySQL - FreeTTS 
+
 ## Guide
+
+Step 1: Import dictionarydb.sql from src/resources
+Step 2: Add pom.xml file to your maven 
+Step 3: Run project
 
 ## Additional Notes
